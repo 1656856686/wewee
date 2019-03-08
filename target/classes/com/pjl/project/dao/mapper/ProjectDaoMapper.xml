@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pjl.project.dao.ProjectDao">
+
+	<select id="getPro" resultType="com.pjl.project.entity.Projects">
+		select * from projects where 1=1
+		<if test="ps_name != null and ps_name != ''">
+			and ps_name like '%${ps_name}%'
+		</if>
+		<if test="ps_us_id != null and ps_us_id != ''">
+			and ps_us_id like '%${ps_us_id}%'
+		</if>
+		<if test="ps_pst_id !=null and ps_pst_id != 0 ">
+			and ps_pst_id like '%${ps_pst_id}%'
+		</if>
+		<if test="ps_type !=null and ps_type != 0 ">
+			and ps_type like '%${ps_type}%'
+		</if>
+	</select>
+	<select id="getProById" parameterType="java.lang.Integer" resultType="com.pjl.project.entity.Projects">
+
+	select * from projects where ps_id=#{id}
+</select>
+</mapper>
