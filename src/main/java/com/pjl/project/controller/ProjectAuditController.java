@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,12 +21,19 @@ public class ProjectAuditController {
     public String toProjectAudit() {
         return "project/projectAudit";
     }
-
+    @RequestMapping("/project/projectAuditTab")
+    public String projectAuditTab(Integer ps_id, HttpServletRequest session){
+        Projects projects=	service.getProById(ps_id);
+        session.setAttribute("projects",projects);
+        return "project/projectAuditTab";
+    }
     @RequestMapping("/project/getProByAudit")
     @ResponseBody
-    public Map<String,Object> getProByAudit(Projects projects,Integer page,Integer limit){
+    public Map<String,Object> getProByAudit(Integer ps_type ,Integer page,Integer limit){
         Map<String,Object> map=new HashMap<>();
-        List<Projects> list= service.getProByAudit(projects);
+        List<Projects> list= service.getProByAudit(ps_type);
+        map.put("code",0);
+        map.put("msg","list");
         map.put("count", list.size());
         map.put("data",list.subList((page-1)*limit>list.size()?0:(page-1)*limit , limit*page > list.size()?list.size():limit*page));
         return  map;

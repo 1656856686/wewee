@@ -8,5 +8,7 @@ import java.util.List;
 
 public interface ProjectAuditService {
 
-    List<Projects> getProByAudit(Projects projects);
+    List<Projects> getProByAudit(Integer ps_type);
+
+    Projects getProById(Integer ps_id);
 }

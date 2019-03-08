@@ -124,7 +124,16 @@
 					{field:'ps_support',title: '更多支持',width:120},
 					{field:'ps_repay',title: '提供回报简述',width:120},
 					{field:'ps_aboutme',title: '关于自己',width:120},
-					{field:'ps_type',title: '项目状态',width:120},
+					{field:'ps_type',title: '项目状态',width:120,templet: function(d){
+							switch(d.ps_type){
+								case 0:return '待审核';
+								case 1:return '待上架';
+								case 2:return "众筹中";
+								case 3:return "众筹成功";
+								case 4:return "众筹失败";
+								case 5:return "审核未通过";
+							}
+						}},
 					{field:'ps_starttime',title: '项目开始的时间',width:120},
 					{field:'ps_endtime',title: '项目结束的时间',width:120},
 					{field:'ps_getmoney',title: '项目已筹资金额',width:120},

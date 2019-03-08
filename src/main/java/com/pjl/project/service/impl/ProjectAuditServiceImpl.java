@@ -16,7 +16,12 @@ public class ProjectAuditServiceImpl implements ProjectAuditService {
     private ProjectAuditDao dao;
 
     @Override
-    public List<Projects> getProByAudit(Projects projects) {
-        return dao.getProByAudit(projects);
+    public List<Projects> getProByAudit(Integer ps_type) {
+        return dao.getProByAudit(ps_type);
+    }
+
+    @Override
+    public Projects getProById(Integer ps_id) {
+        return dao.getProById(ps_id);
     }
 }

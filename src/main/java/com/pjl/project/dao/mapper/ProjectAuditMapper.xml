@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.pjl.project.dao.ProjectAuditDao">
-    <select id="getProByAudit" parameterType="com.pjl.project.entity.Projects"
-            resultType="com.pjl.project.entity.Projects">
-          select * from projects where ps_type=0
+    <select id="getProByAudit" parameterType="java.lang.Integer" resultType="com.pjl.project.entity.Projects">
+          select * from projects where ps_type = #{ps_type}
     </select>
+    <select id="getProById" parameterType="java.lang.Integer" resultType="com.pjl.project.entity.Projects">
+
+	select * from projects where ps_id=#{id}
+</select>
 </mapper>

@@ -26,6 +26,58 @@
 </head>
 <body>
 <h1>项目审核</h1>
+<table id="projectAuditData" class="layui-table" lay-data="{id: 'idTest'} " lay-filter="test"></table>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail" >审核</a>
+</script>
 <div id="div_back"><a href="javascript:history.go(-1)">返回上一页</a></div>
+
 </body>
+<script type="text/javascript">
+    layui.use(['form', 'table'], function () {
+        var form = layui.form;
+        table = layui.table;
+        table.render({
+            elem: '#projectAuditData',
+            url: "<%=path%>/project/getProByAudit.do?ps_type="+0,
+            height: 450,
+            page: true,
+            cols: [[
+                {type: 'checkbox', fixed: 'left', width: 50, align: 'center'},
+                {field: 'ps_id', title: '项目ID', sort: true, fixed: 'left', width: 100},
+                {field: 'ps_us_id', title: '用户ID', sort: true, fixed: 'left', width: 100},
+                {field: 'ps_name', title: '项目标题', width: 200},
+                {field: 'ps_address', title: '项目地址', width: 200},
+                {field: 'ps_video', title: '宣传视频地址', width: 200},
+                {field: 'ps_type', title: '项目状态', width: 200,templet: function(d){
+                        switch(d.ps_type){
+                            case 0:return "待审核";
+                            case 1:return "待上架";
+                            case 2:return "众筹中";
+                            case 3:return "众筹成功";
+                            case 4:return "众筹失败";
+                            case 5:return "审核未通过";
+                        }
+                }},
+                {field: 'ps_starttime', title: '项目开始的时间', width: 200},
+                {field: 'ps_endtime', title: '项目结束的时间', width: 200},
+                {fixed: 'right', title: '详情', width: 100, align: 'center', toolbar: '#barDemo'}
+            ]]
+        })
+        table.on('tool(test)', function(obj){
+            var data = obj.data
+            var id=	 data.ps_id
+            layer.open({
+                title: '详细信息',
+                type: 2,
+                area: ['800px', '530px'],
+                content: '<%=path%>/project/projectAuditTab.do?ps_id='+id,//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+                btn:['通过','返回']
+            });
+
+
+
+    })
+</script>
+
 </html>

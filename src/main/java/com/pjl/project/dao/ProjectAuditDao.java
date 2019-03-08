@@ -7,5 +7,7 @@ import java.util.List;
 public interface ProjectAuditDao {
 
 
-    List<Projects> getProByAudit(Projects projects);
+    List<Projects> getProByAudit(Integer ps_type);
+
+    Projects getProById(Integer ps_id);
 }
