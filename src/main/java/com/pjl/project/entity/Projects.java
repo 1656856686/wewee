@@ -2,7 +2,10 @@ package com.pjl.project.entity;
 
 public class Projects {
    private  Integer ps_id;
-   private  Integer ps_us_id;
+
+
+
+    private  Integer ps_us_id;
    private  String  ps_cust_name;
    private  String ps_cust_phone;
    private  String ps_cust_address;
@@ -232,4 +235,28 @@ public class Projects {
         super();
     }
 
+    public Projects(Integer ps_id, Integer ps_us_id, String ps_cust_name, String ps_cust_phone, String ps_cust_address, Integer ps_pst_id, String ps_file, String ps_name, String ps_goal, String ps_address, Double ps_money, Integer ps_days, String ps_video, String ps_story, String ps_support, String ps_repay, String ps_aboutme, Integer ps_type, String ps_starttime, String ps_endtime, Double ps_getmoney, Integer ps_getpeople) {
+        this.ps_id = ps_id;
+        this.ps_us_id = ps_us_id;
+        this.ps_cust_name = ps_cust_name;
+        this.ps_cust_phone = ps_cust_phone;
+        this.ps_cust_address = ps_cust_address;
+        this.ps_pst_id = ps_pst_id;
+        this.ps_file = ps_file;
+        this.ps_name = ps_name;
+        this.ps_goal = ps_goal;
+        this.ps_address = ps_address;
+        this.ps_money = ps_money;
+        this.ps_days = ps_days;
+        this.ps_video = ps_video;
+        this.ps_story = ps_story;
+        this.ps_support = ps_support;
+        this.ps_repay = ps_repay;
+        this.ps_aboutme = ps_aboutme;
+        this.ps_type = ps_type;
+        this.ps_starttime = ps_starttime;
+        this.ps_endtime = ps_endtime;
+        this.ps_getmoney = ps_getmoney;
+        this.ps_getpeople = ps_getpeople;
+    }
 }
