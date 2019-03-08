@@ -41,11 +41,11 @@
 		          <a class="" href="javascript:;">项目管理</a>
 		          <dl class="layui-nav-child">
 		            <dd><a href="#" class="menu" url="<%=path%>/toProject.do" title="所有项目">所有项目</a></dd>
-		            <dd><a href="#" class="menu" url="<%=path%>/toProject.do" title="项目审核">项目审核</a></dd>
-		            <dd><a href="javascript:;">项目跟踪</a></dd>
-		            <dd><a href="javascript:;">项目评论</a></dd>
-		            <dd><a href="">项目分类</a></dd>
-		            <dd><a href="">项目推荐</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/toProjectAudit.do" title="项目审核">项目审核</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/toProjectTrace.do" title="项目跟踪">项目跟踪</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/toProjectComment.do" title="项目评论">项目评论</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/toProjectClassify.do" title="项目分类">项目分类</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/toProjectRecommend.do" title="项目推荐">项目推荐</a></dd>
 		          </dl>
 		        </li>
 		        <li class="layui-nav-item">
