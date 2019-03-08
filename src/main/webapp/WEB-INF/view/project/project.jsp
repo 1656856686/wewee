@@ -112,13 +112,7 @@
 					{field:'ps_cust_name',title: '客服姓名',width:120},
 					{field:'ps_cust_phone',title: '客服电话',width:120},
 					{field:'ps_cust_address',title: '客服地址',width:120},
-					{field:'ps_pst_id',title: '项目类型ID',width:120
-
-
-
-
-
-					},
+					{field:'ps_pst_id',title: '项目类型ID',width:120},
 					{field:'ps_file',title: '文件名称',width:120},
 					{field:'ps_name',title: '项目标题',width:120},
 					{field:'ps_goal',title: '筹款目的',width:120},
@@ -130,12 +124,7 @@
 					{field:'ps_support',title: '更多支持',width:120},
 					{field:'ps_repay',title: '提供回报简述',width:120},
 					{field:'ps_aboutme',title: '关于自己',width:120},
-					{field:'ps_type',title: '项目状态',width:120
-
-
-
-
-					},
+					{field:'ps_type',title: '项目状态',width:120},
 					{field:'ps_starttime',title: '项目开始的时间',width:120},
 					{field:'ps_endtime',title: '项目结束的时间',width:120},
 					{field:'ps_getmoney',title: '项目已筹资金额',width:120},
@@ -186,9 +175,9 @@
                 });
 */
 
-
+			})
 			});
-		})
+
 
 
 	</script>

@@ -26,6 +26,38 @@
 </head>
 <body>
 <h1>项目审核</h1>
+<table id="projectAuditData" class="layui-table" lay-data="{id: 'idTest'} " lay-filter="test"></table>
 <div id="div_back"><a href="javascript:history.go(-1)">返回上一页</a></div>
+<div type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail" >审核</a>
+</div>
 </body>
+<script type="text/javascript">
+    layui.use(['form', 'table'], function () {
+        var form = layui.form;
+        table = layui.table;
+        table.render({
+            elem: '#projectAuditData',
+            url: "<%=path%>/project/getProByAudit.do",
+            height: 450,
+            page: true,
+            cols: [[
+                {type: 'checkbox', fixed: 'left', width: 50, align: 'center'},
+                {field: 'ps_id', title: '项目ID', sort: true, fixed: 'left', width: 100},
+                {field: 'ps_us_id', title: '用户ID', sort: true, fixed: 'left', width: 100},
+                {field: 'ps_name', title: '项目标题', width: 120},
+                {field: 'ps_address', title: '项目地址', width: 120},
+                {field: 'ps_video', title: '宣传视频地址', width: 120},
+                {field: 'ps_type', title: '项目状态', width: 120},
+                {field: 'ps_starttime', title: '项目开始的时间', width: 120},
+                {field: 'ps_endtime', title: '项目结束的时间', width: 120},
+                {fixed: 'right', title: '详情', width: 70, align: 'center', toolbar: '#barDemo'}
+            ]]
+        })
+
+
+    })
+
+</script>
+
 </html>
