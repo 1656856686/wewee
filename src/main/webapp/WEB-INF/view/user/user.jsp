@@ -19,7 +19,6 @@
             text-align: right;
             padding-right: 50px;
             margin: 10px auto;
-
         }
     </style>
 </head>

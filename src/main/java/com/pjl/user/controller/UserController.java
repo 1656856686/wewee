@@ -17,6 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
+@RequestMapping("/user")
 public class UserController {
 	
 	@Autowired
@@ -24,7 +25,7 @@ public class UserController {
 	
 	@RequestMapping("/toUser")
 	public String toUser(){
-		return "user";
+		return "user/user";
 	}
 	
 
