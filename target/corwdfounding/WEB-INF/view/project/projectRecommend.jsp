@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-<h1>项目评论</h1>
+<h1>项目推荐</h1>
 <div id="div_back"><a href="javascript:history.go(-1)">返回上一页</a></div>
 </body>
 </html>

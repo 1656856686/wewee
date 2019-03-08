@@ -19,13 +19,15 @@
             text-align: right;
             padding-right: 50px;
             margin: 10px auto;
+
         }
-
-
     </style>
 </head>
+
 <body>
-<h1>项目评论</h1>
+<h1>用户注册</h1>
 <div id="div_back"><a href="javascript:history.go(-1)">返回上一页</a></div>
+
 </body>
+
 </html>

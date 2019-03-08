@@ -51,8 +51,8 @@
 		        <li class="layui-nav-item">
 		          <a href="javascript:;">用户管理</a>
 		          <dl class="layui-nav-child">
-		            <dd><a href="javascript:;">注册用户</a></dd>
-		            <dd><a href="javascript:;">用户资金</a></dd>
+					<dd><a href="#" url="<%=path%>/toUser.do">用户注册</a></dd>
+		            <dd><a href="javascript:;">注册资金</a></dd>
 		            <dd><a href="">用户日志</a></dd>
 		            <dd><a href="">实名审核</a></dd>
 		          </dl>
