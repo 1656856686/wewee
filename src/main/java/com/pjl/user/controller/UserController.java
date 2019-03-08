@@ -1,5 +1,4 @@
 package com.pjl.user.controller;
-
 import com.pjl.admin.entity.Admin;
 import com.pjl.admin.service.AdminService;
 import com.pjl.user.entity.User;
@@ -27,6 +26,5 @@ public class UserController {
 	public String toUser(){
 		return "user/user";
 	}
-	
 
 }

@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<h1>用户注册</h1>
+<h1>实名审核</h1>
 <div id="div_back"><a href="javascript:history.go(-1)">返回上一页</a></div>
 
 </body>

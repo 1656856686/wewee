@@ -51,10 +51,10 @@
 		        <li class="layui-nav-item">
 		          <a href="javascript:;">用户管理</a>
 		          <dl class="layui-nav-child">
-					<dd><a href="#" class="menu" url="<%=path%>/toUser.do" title="用户注册" >用户注册</a></dd>
-		            <dd><a href="javascript:;">注册资金</a></dd>
-		            <dd><a href="">用户日志</a></dd>
-		            <dd><a href="">实名审核</a></dd>
+					<dd><a href="#" class="menu" url="<%=path%>/user/toUser.do" title="用户注册" >用户注册</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/user/toRegisterMoney.do" title="注册资金" >注册资金</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/user/toUserLogs.do" title="用户日志">用户日志</a></dd>
+		            <dd><a href="#" class="menu" url="<%=path%>/user/toNameAudit.do" title="实名审核">实名审核</a></dd>
 		          </dl>
 		        </li>
 		        <li class="layui-nav-item"><a href="">新闻管理</a></li>
