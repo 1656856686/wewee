@@ -8,12 +8,14 @@
   <component name="ChangeListManager">
     <list default="true" id="37c49793-b516-40a1-8aca-86a2509ec234" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectTraceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectTraceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectTraceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectTraceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectTraceDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectTraceDaoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectTraceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectTraceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectTraceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectTraceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectTrace.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectTrace.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectCommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectCommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectCommentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectCommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectCommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectCommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectComment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectComment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/corwdfounding/WEB-INF/classes/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/corwdfounding/WEB-INF/classes/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,41 +36,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectAudit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="216">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectAuditController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectTrace.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectTraceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectTraceService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectCommentService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
               <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -77,37 +52,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectTraceServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectCommentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectAuditMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectTraceDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectCommentDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectTraceDaoMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="168">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectComment.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/entity/comments.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/entity/Projects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="8" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -115,8 +126,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/project.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="35" />
+            <state relative-caret-position="1585">
+              <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectAuditMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -127,8 +147,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -139,14 +159,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectRceommendDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectClassifyDaoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectRecommendDaoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectClassifyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectRecommendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectClassify.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectRecommend.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectComment.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/pjl/user/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pjl/user/controller/UserRegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pjl/user/dao/UserRegisterDao.java" />
@@ -190,6 +203,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectTraceServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectTraceController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectTrace.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectCommentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectCommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectCommentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectComment.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pjl/project/entity/comments.java" />
       </list>
     </option>
   </component>
@@ -317,6 +337,16 @@
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corwdfounding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corwdfounding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pjl" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="corwdfounding" type="b2602c69:ProjectViewProjectNode" />
@@ -534,7 +564,7 @@
       <workItem from="1552014046754" duration="355000" />
       <workItem from="1552014493562" duration="6527000" />
       <workItem from="1552033256409" duration="21039000" />
-      <workItem from="1552095939996" duration="20884000" />
+      <workItem from="1552095939996" duration="22717000" />
     </task>
     <task id="LOCAL-00001" summary="第一次">
       <created>1552015369174</created>
@@ -627,11 +657,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552114375556</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="第一次">
+      <created>1552119543298</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1552119543298</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138286000" />
+    <option name="totallyTimeSpent" value="140119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,7 +683,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61161524" visible="true" weight="0.23638968" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61161524" visible="true" weight="0.24212034" />
       <window_info id="Structure" order="1" sideWeight="0.5013441" side_tool="true" weight="0.11246418" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -657,7 +694,7 @@
       <window_info id="Favorites" order="8" sideWeight="0.20592193" side_tool="true" weight="0.21489972" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.6769852" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713466" visible="true" weight="0.26244953" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713466" visible="true" weight="0.25033647" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -689,50 +726,6 @@
       <window_info anchor="right" id="Bean Validation" order="11" />
       <window_info anchor="right" id="控制板" order="12" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61161524" visible="true" weight="0.17836677" />
-      <window_info id="Structure" order="1" sideWeight="0.5013441" side_tool="true" weight="0.11246418" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Web" order="6" sideWeight="0.38838476" side_tool="true" weight="0.29154727" />
-      <window_info id="设计师" order="7" />
-      <window_info id="Favorites" order="8" sideWeight="0.20592193" side_tool="true" weight="0.21489972" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.6769852" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.497851" visible="true" weight="0.410498" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.3293011" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.497851" weight="0.1090175" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.3293011" />
-      <window_info anchor="bottom" id="Terminal" order="9" show_stripe_button="false" weight="0.3293011" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502149" side_tool="true" weight="0.28263795" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3293011" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" show_stripe_button="false" weight="0.3293011" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49856734" weight="0.33916554" />
-      <window_info anchor="bottom" id="消息" order="16" weight="0.3293011" />
-      <window_info anchor="bottom" id="运行" order="17" sideWeight="0.49641833" weight="0.09811828" />
-      <window_info anchor="bottom" id="调试" order="18" sideWeight="0.49856734" weight="0.3293011" />
-      <window_info anchor="bottom" id="找到" order="19" weight="0.3293011" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3295129" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="JSF" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="CDI" order="7" weight="0.3295129" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
-      <window_info anchor="right" id="控制板" order="12" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -796,66 +789,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectClassifyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectRecommendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectRecommendController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectRecommend.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/user/controller/UserRegisterController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/user/service/UserLogsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/user/service/RegisterMoneyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1094,27 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectComment.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/project.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectAudit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectTraceDaoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1143,10 +1055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectAuditMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectTrace.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+        <state relative-caret-position="169">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1157,17 +1069,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectTraceController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectCommentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="336">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectTrace.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/ProjectCommentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        <state relative-caret-position="168">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="81" column="16" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/controller/ProjectTraceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/impl/ProjectCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectCommentDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/service/ProjectCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/dao/mapper/ProjectAuditMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectAudit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/projectComment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/entity/Projects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/project/project.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1585">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pjl/project/entity/comments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
