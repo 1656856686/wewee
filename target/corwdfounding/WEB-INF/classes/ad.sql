@@ -2,7 +2,8 @@
 SQLyog Ultimate v8.32 
 MySQL - 5.1.51-community : Database - zc
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -29,7 +30,7 @@ CREATE TABLE `admin` (
 
 /*Data for the table `admin` */
 
-/*Table structure for table `comments` */
+/*Table structure for table `Comments` */
 
 DROP TABLE IF EXISTS `comments`;
 
@@ -41,7 +42,7 @@ CREATE TABLE `comments` (
   PRIMARY KEY (`cm_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-/*Data for the table `comments` */
+/*Data for the table `Comments` */
 
 /*Table structure for table `funding` */
 

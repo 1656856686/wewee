@@ -1,12 +1,12 @@
 package com.pjl.project.entity;
 
-public class comments {
+public class Comments {
     private  Integer cm_id;
     private  Integer cm_us_id;
     private  Integer cm_ps_id;
     private  String  cm_content;
 
-    public comments(Integer cm_id, Integer cm_us_id, Integer cm_ps_id, String cm_content) {
+    public Comments(Integer cm_id, Integer cm_us_id, Integer cm_ps_id, String cm_content) {
         this.cm_id = cm_id;
         this.cm_us_id = cm_us_id;
         this.cm_ps_id = cm_ps_id;
@@ -47,7 +47,7 @@ public class comments {
 
     @Override
     public String toString() {
-        return "comments{" +
+        return "Comments{" +
                 "cm_id=" + cm_id +
                 ", cm_us_id=" + cm_us_id +
                 ", cm_ps_id=" + cm_ps_id +

@@ -4,5 +4,7 @@
     <select id="getProjectCommentByPs_type" parameterType="java.lang.Integer" resultType="com.pjl.project.entity.Projects">
           select * from projects where ps_type = #{ps_type}
     </select>
-
+    <select id="getComments" resultType="com.pjl.project.entity.Comments">
+          select * from comments
+    </select>
 </mapper>
