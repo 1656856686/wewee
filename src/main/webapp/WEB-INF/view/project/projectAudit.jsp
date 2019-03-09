@@ -25,8 +25,8 @@
     </style>
 </head>
 <body>
-<h1>项目审核</h1>
-<table id="projectAuditData" class="layui-table" lay-data="{id: 'idTest'} " lay-filter="test"></table>
+<font size="4">项目审核</font>
+<table id="projectAuditData" lay-filter="test1"></table>
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail" >审核</a>
 </script>
@@ -64,19 +64,65 @@
                 {fixed: 'right', title: '详情', width: 100, align: 'center', toolbar: '#barDemo'}
             ]]
         })
-        table.on('tool(test)', function(obj){
+        table.on('tool(test1)', function(obj){
             var data = obj.data
-            var id=	 data.ps_id
+            var ps_id=data.ps_id
             layer.open({
-                title: '详细信息',
+                title: '审核信息',
                 type: 2,
                 area: ['800px', '530px'],
-                content: '<%=path%>/project/projectAuditTab.do?ps_id='+id,//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
-                btn:['通过','返回']
+                content: '<%=path%>/project/projectAuditTab.do?ps_id='+ps_id,//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+                btn:['确定','通过','不通过']
+                ,btn2: function(index){
+                   /*location.href="<%=path%>/project/upProjectByPs_id.do?ps_type="+ps_type*/
+                    $.ajax({
+                        type:'post',
+                        url:"<%=path%>/project/upProjectByPs_id.do",
+                        data:{"ps_id":ps_id},
+                        dataType:"json",
+                        success:function(data){
+                            if(data.success){
+                               /* $(".layui-laypage-btn")[0].click();//刷新当前页面*/
+                                table.reload('projectAuditData', {
+                                    url: "<%=path%>/project/getProByAudit.do?ps_type="+0
+                                });
+                            }else{
+                                layer.msg('系统2错误', {
+                                    time: 5000, //5s后自动关闭
+                                    btn: ['明白了', '知道了', '哦']
+                                });
+                            }
+                        }
+                    });
+                }
+                ,btn3: function(index){
+                  /* location.href="<%=path%>/project/upProjectById.do?ps_type="+ps_type*/
+                   $.ajax({
+                        type:'post',
+                        url:"<%=path%>/project/upProjectById.do",
+                        data:{"ps_id":ps_id},
+                        dataType:"json",
+                        success:function(data){
+                            if(data.success){
+                               /* $(".layui-laypage-btn")[0].click();//刷新当前页面*/
+                                table.reload('projectAuditData', {
+                                    url: "<%=path%>/project/getProByAudit.do?ps_type="+0
+                                });
+                            }else{
+                                layer.msg('系统4错误', {
+                                    time: 5000, //5s后自动关闭
+                                    btn: ['明白了', '知道了', '哦']
+                                });
+                            }
+                        }
+                    });
+                }
+
             });
 
 
 
+    })
     })
 </script>
 

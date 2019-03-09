@@ -11,4 +11,8 @@ public interface ProjectAuditService {
     List<Projects> getProByAudit(Integer ps_type);
 
     Projects getProById(Integer ps_id);
+
+    void upProjectByPs_id(Integer ps_id);
+
+    void upProjectById(Integer ps_id);
 }

@@ -24,4 +24,14 @@ public class ProjectAuditServiceImpl implements ProjectAuditService {
     public Projects getProById(Integer ps_id) {
         return dao.getProById(ps_id);
     }
+
+    @Override
+    public void upProjectByPs_id(Integer ps_id) {
+        dao.upProjectByPs_id(ps_id);
+    }
+
+    @Override
+    public void upProjectById(Integer ps_id) {
+        dao.upProjectById(ps_id);
+    }
 }

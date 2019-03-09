@@ -8,4 +8,12 @@
 
 	select * from projects where ps_id=#{id}
 </select>
+    <update id="upProjectByPs_id" parameterType="java.lang.Integer">
+
+	update projects set ps_type=1 WHERE ps_id=#{ps_id}
+</update>
+    <update id="upProjectById" parameterType="java.lang.Integer">
+
+	update projects set ps_type=5 WHERE ps_id=#{ps_id}
+</update>
 </mapper>

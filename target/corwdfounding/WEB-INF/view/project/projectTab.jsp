@@ -161,7 +161,7 @@
             <td>项目状态</td>
             <td>
                 <div class="layui-input-inline" style="width: 100%">
-                    <input type="text" class="layui-input" name="ps_type" value="${projects.ps_type}">
+                    <input type="text" class="layui-input" name="ps_type" value="${projects.ps_type==0?'待审核':projects.ps_type==1?'待上架':projects.ps_type==2?'众筹中':projects.ps_type==3?'众筹成功':projects.ps_type==4?'众筹失败':'审核未通过'}">
                 </div>
             </td>
 

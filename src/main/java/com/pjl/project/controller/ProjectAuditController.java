@@ -39,4 +39,32 @@ public class ProjectAuditController {
         return  map;
     }
 
+
+    @RequestMapping(" /project/upProjectByPs_id")
+    @ResponseBody
+    public Map<String,Object> upProjectByPs_id(Integer ps_id){
+        Map<String,Object> map =new HashMap<>();
+        try {
+            service.upProjectByPs_id(ps_id);
+            map.put("success", true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            map.put("success", false);
+        }
+        return map;
+    }
+    @RequestMapping("/project/upProjectById")
+    @ResponseBody
+    public Map<String,Object> upProjectById(Integer ps_id){
+        Map<String,Object> map =new HashMap<>();
+        try {
+            service.upProjectById(ps_id);
+            map.put("success", true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            map.put("success", false);
+        }
+        return map;
+    }
+
 }
