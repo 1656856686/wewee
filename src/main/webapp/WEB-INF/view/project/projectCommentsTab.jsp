@@ -14,46 +14,63 @@
     <script type="text/javascript" src="<%=path%>/boot/bootstrap/js/bootstrap.min.js"></script>
     <style type="text/css">
 
-        #ada{
-            border:1px solid #5FB878;
-            margin:10px auto;
-            width:95%;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        #ada td{
-            border:2px solid #5FB878;
-            padding:1px;
-        }
-
+                              #div_back {
+                                  border: 1px solid white;
+                                  width: 900px;
+                                  text-align: right;
+                                  padding-right: 50px;
+                                  margin: 10px auto;
+                              }
     </style>
 </head>
 <body>
-<form class="layui-form" >
-    <table align="center" id="ada">
-        <tr>
-            <td>用户ID</td>
-            <td>
-                <div class="layui-input-inline" style="width: 100%">
-                    <input type="text" class="layui-input" name="cm_us_id" value="${comments.cm_us_id}">
-                </div>
-            </td>
-            <td>项目ID</td>
-            <td>
-                <div class="layui-input-inline" style="width: 100%">
-                    <input type="text" class="layui-input" name="cm_ps_id" value="${comments.cm_ps_id}">
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>评论内容</td>
-            <td>
-                <div class="layui-input-inline" style="width: 100%">
-                    <input type="text" class="layui-input" name="cm_content" value="${comments.cm_content}">
-                </div>
-            </td>
-        </tr>
-    </table>
-</form>
+<table id="projectCommentTabData" lay-filter="test5"></table>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">删除评论</a>
+</script>
+<div id="div_back"><a href="javascript:history.go(-1)">返回上一页</a></div>
 </body>
+<script type="text/javascript">
+    function child(ps_id) {
+    layui.use(['form','table'],function(){
+        var form = layui.form;
+        table = layui.table;
+        table.render({
+            elem:'#projectCommentTabData',
+            url:"<%=path%>/project/getProjectComments.do?ps_id="+ps_id,
+            height:380,
+            width:900,
+            page: true,
+            cols:[[
+                {type: 'checkbox',fixed: 'left',width:50,align:'center'},
+                {field:'cm_id',  title: '评论ID', sort: true,fixed: 'left',width:100},
+                {field:'us_id',  title: '用户ID', sort: true,width:100},
+                {field:'us_name',title: '用户姓名',width:120},
+                {field:'us_money',title: '用户资金',width:120,templet:function (d) {
+                        return d.us_money +"元"
+                    }},
+                {field:'ps_id',title: '项目ID',width:120},
+                {field:'ps_name',title: '项目名称',width:120},
+                {field:'ps_money',title: '项目资金',width:120},
+                {field:'ps_address',title: '项目地址',width:120},
+                {field:'ps_type',title: '项目状态',width:120,templet: function(d){
+                        switch(d.ps_type){
+                            case 0:return '待审核';
+                            case 1:return '待上架';
+                            case 2:return "众筹中";
+                            case 3:return "众筹成功";
+                            case 4:return "众筹失败";
+                            case 5:return "审核未通过";
+                        }
+                    }},
+                {field:' cm_content',title: '评论内容',width:120},
+                {fixed:'right',title: '详情',width:90,align:'center', toolbar: '#barDemo'}
+            ]]
+        });
+
+    });
+
+    }
+
+</script>
 </html>

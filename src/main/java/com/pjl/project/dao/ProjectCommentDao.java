@@ -10,5 +10,5 @@ public interface ProjectCommentDao {
 
     List<Projects> getProjectCommentByPs_type(Integer ps_type);
 
-    Comments getComments();
+    List<Comments> getComments(Integer ps_id);
 }

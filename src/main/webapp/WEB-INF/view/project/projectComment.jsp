@@ -28,8 +28,7 @@
 <font size="4">项目评论</font>
 <table id="projectCommentData" lay-filter="test4"></table>
     <script type="text/html" id="barDemo">
-        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
-        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看评论</a>
 </script>
 <div id="div_back"><a href="javascript:history.go(-1)">返回上一页</a></div>
 </body>
@@ -75,20 +74,26 @@
                 {field:'ps_endtime',title: '项目结束的时间',width:120},
                 {field:'ps_getmoney',title: '项目已筹资金额',width:120},
                 {field:'ps_getpeople',title: '项目支持人数',width:120},
-                {fixed:'right',title: '详情',width:120,align:'center', toolbar: '#barDemo'}
+                {fixed:'right',title: '详情',width:90,align:'center', toolbar: '#barDemo'}
             ]]
         });
-       /* table.on('tool(test4)', function(obj){
+       table.on('tool(test4)', function(obj){
             var data = obj.data
-            var id=	 data.ps_id
+            var ps_id=	 data.ps_id
             layer.open({
-                title: '详细信息',
+                title: '评论信息',
                 type: 2,
                 area: ['900px', '530px'],
-                content: '<%=path%>/project/projectCommentTab.do?ps_id='+id,//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+                content: '<%=path%>/project/getProjectCommentsTab.do',//这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+                success: function (layero, index) {
+                    // 获取子页面的iframe
+                    var iframe = window['layui-layer-iframe' + index];
+                    // 向子页面的全局函数child传参
+                    iframe.child(ps_id);
+                },
                 btn:['确认']
             });
-        })*/
+        })
     });
 
 

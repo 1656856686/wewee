@@ -36,10 +36,20 @@ public class ProjectCommentController {
         map.put("data", list.subList((page - 1) * limit > list.size() ? 0 : (page - 1) * limit, limit * page > list.size() ? list.size() : limit * page));
         return map;
     }
-    @RequestMapping("/project/getProjectComments")
-    public String projectTab(HttpServletRequest session) {
-        Comments comments = service.getComments();
-        session.setAttribute("Comments", comments);
+    @RequestMapping("/project/getProjectCommentsTab")
+    public String getProjectCommentsTab() {
         return "project/projectCommentsTab";
+    }
+    @RequestMapping("/project/getProjectComments")
+    @ResponseBody
+    public Map<String,Object> projectTab(Integer ps_id, Integer page, Integer limit) {
+        Map<String,Object> map=new HashMap<>();
+        List<Comments> list  = service.getComments(ps_id);
+        map.put("code", 0);
+            map.put("msg", "list");
+         map.put("count", list.size());
+         map.put("data", list.subList((page - 1) * limit > list.size() ? 0 : (page - 1) * limit, limit * page > list.size() ? list.size() : limit * page));
+
+        return map;
     }
 }

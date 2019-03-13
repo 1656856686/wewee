@@ -4,7 +4,41 @@
     <select id="getProjectCommentByPs_type" parameterType="java.lang.Integer" resultType="com.pjl.project.entity.Projects">
           select * from projects where ps_type = #{ps_type}
     </select>
-    <select id="getComments" resultType="com.pjl.project.entity.Comments">
-          select * from comments
+    <resultMap id="commentsMap" type="com.pjl.project.entity.comments_view">
+        <id column="cm_id" property="cm_id"/>
+        <result column="us_id" property="us_id"/>
+        <result column="us_name" property="us_name"/>
+        <result column="us_money" property="us_money"/>
+        <result column="us_phone" property="us_phone"/>
+        <result column="ps_id" property="ps_id"/>
+        <result column="ps_name" property="ps_name"/>
+        <result column="ps_money" property="ps_money"/>
+        <result column="ps_address" property="ps_address"/>
+        <result column="ps_type" property="ps_type"/>
+        <result column="cm_content" property="cm_content"/>
+    </resultMap>
+    <!-- <collection property="user_list" ofType="com.pjl.user.entity.User">
+         <id column="us_id" property="us_id"/>
+         <result column="us_name" property="us_name"/>
+         <result column="us_money" property="us_money"/>
+         <result column="us_phone" property="us_phone"/>
+     </collection>
+     <collection property="project_list" ofType="com.pjl.project.entity.Projects">
+         <id column="ps_id" property="ps_id"/>
+         <result column="ps_name" property="ps_name"/>
+         <result column="ps_money" property="ps_money"/>
+         <result column="ps_address" property="ps_address"/>
+         <result column="ps_type" property="ps_type"/>
+      </collection>
+创建视图sql语句:
+CREATE OR REPLACE VIEW comments_view AS SELECT c.cm_id "评论编号",u. us_id "用户ID",u.us_name "用户名称",u.us_money "用户资金",
+u.us_phone "用户电话",p.ps_id "项目ID",p.ps_name "项目名称",p.ps_money "项目资金",p.ps_address "项目地址",p.ps_type "项目状态",c.cm_content "评论内容"
+FROM comments c,USER u,projects p WHERE c.cm_us_id=u.us_id AND c.cm_ps_id=p.ps_id;
+
+SELECT cm_id ,cm_content, us_id, us_name, us_money ,us_phone ,ps_id, ps_name,ps_money,ps_address,ps_type
+FROM comments c LEFT JOIN USER u ON c.cm_us_id=u.us_id LEFT JOIN projects p ON c.cm_ps_id=p.ps_id
+WHERE ps_id=#{ps_id}-->
+    <select id="getComments" parameterType="java.lang.Integer" resultMap="commentsMap">
+    select *from comments_view WHERE ps_id=#{ps_id}
     </select>
 </mapper>

@@ -22,7 +22,7 @@ public class ProjectCommentServiceImpl implements ProjectCommentService {
     }
 
     @Override
-    public Comments getComments() {
-        return dao.getComments();
+    public List<Comments> getComments(Integer ps_id) {
+        return dao.getComments(ps_id);
     }
 }
